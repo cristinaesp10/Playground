@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play w/ Numbers and Colors</title>
+    <style>
+        .box{
+            height:200px; 
+            width: 200px; 
+            margin:5px; 
+            border: solid black 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome!</h1>
+    <div class="container" style="display:flex;
+    flex-wrap: wrap; 
+    margin: 20px 100px; 
+    justify-content:space-evenly;">
+
+        {% for x in range(0,num) %}
+        <div class="box" style= "background-color: {{color}}""></div>
+        {% endfor %}
+        
+    </div>
+</body>
+</html>
